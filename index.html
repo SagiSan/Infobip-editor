@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="styles.css" rel="stylesheet" type="text/css">
+
+    <!-- Latest compiled and minified CSS -->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+            crossorigin="anonymous">-->
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+        <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div id="logo"><img class="img-responsive" src="http://www.photos.apo-opa.com/plog-content/images/apo/logos/infobip.png"></div>
+    </header>
+
+    <div class="container-fluid">
+        <div id="input-holder">
+            <input id="textName" type="text" name="textName" placeholder="input text name here" onkeypress="inputKeyEvent(event)" onpaste="inputPasteEvent(event)"
+            />
+        </div>
+        <div id="textarea-holder">
+            <textarea id="text" placeholder="Insert text here" rows="20" cols="30" onkeypress="textKeyEvent(event)" onpaste="textPasteEvent(event)"></textarea>
+        </div>
+
+        <div id="alert-box"></div>
+
+        <div id="btns">
+            <button class="btn btn-primary" onclick="generateText()">Generate Text</button>
+            <button id="saveBtn" class="btn btn-success" onclick="saveText()">Save</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

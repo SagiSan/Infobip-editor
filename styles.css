@@ -1,0 +1,48 @@
+
+html, body {
+    height: 100% !important;
+    width: 100% !important;
+    margin: 0;
+    padding: 0;   
+    background-color: #323232 !important;
+}
+
+#logo {
+   margin: 10px;
+   
+}
+
+#logo img {
+    margin: 0 auto;
+}
+
+.container-fluid {
+    padding: 0px 10px !important;
+    margin: 0 auto; 
+    width: 80%;
+}
+
+#input-holder {
+    margin: 10px 0px;
+}
+#textName {
+    width: 50%;
+    font-size: 18px;
+}
+
+#textarea-holder {
+    margin: 10px 0px;
+}
+
+#text {
+    width: 100%;
+    resize: none;
+}
+
+#btns{
+    margin-bottom: 20px;
+}
+
+@media (min-width: 600px) {
+
+}
